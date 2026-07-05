@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unai Jewellers | Premium Gold & Silver Showcase | Gujarat</title>
+    <meta name="description" content="Discover exquisite pure gold and silver craftsmanship at Unai Jewellers, Gujarat. Timeless custom designs from daily wear to royal wedding flair.">
+    
+    <!-- Professional Web Asset CDNs -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Internal Stylesheet Layer Connections -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Sticky Header Navbar Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-luxury fixed-top">
+            <div class="container">
+                <a class="navbar-brand navbar-brand-editorial" href="index.html">Unai Jewellers</a>
+                <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLuxuryMenu" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars-staggered fs-3"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarLuxuryMenu">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="collections.html">Collections</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">Our Story</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Full-screen Luxury Hero Canvas -->
+        <section class="hero-luxury" style="background: linear-gradient(rgba(17,17,17,0.55), rgba(17,17,17,0.85)), url('https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;">
+            <div class="container position-relative" style="z-index: 2;">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <div class="hero-content" data-aos="fade-up" data-aos-duration="1400">
+                            <span class="hero-subtitle">Generations of Pure Trust</span>
+                            <h1 class="hero-title">From Daily Wear<br>to Wedding Flair</h1>
+                            <p class="text-white-50 mb-4 fs-5 fw-light">
+                                Welcome to Unai's legendary house of premium purity. We curate fine hallmark Gold and Silver masterpieces crafted exclusively to celebrate lifetime moments and everyday expressions of luxury.
+                            </p>
+                            <div class="d-flex flex-wrap gap-3">
+                                <a href="collections.html" class="btn-luxury btn-luxury-gold">Explore Showroom</a>
+                                <a href="contact.html" class="btn-luxury border-white text-white">Book Consultation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Live Commodity Price Dashboard -->
+        <section class="py-5" style="background-color: var(--color-cream); border-top: 1px solid rgba(212,175,55,0.15); border-bottom: 1px solid rgba(212,175,55,0.15);">
+            <div class="container">
+                <div class="row align-items-center justify-content-between g-4">
+                    <div class="col-lg-4 text-center text-lg-start">
+                        <span class="text-uppercase tracking-wider small text-warning fw-medium d-block mb-1" style="letter-spacing: 2px;">Transparent Valuation</span>
+                        <h2 class="font-editorial text-dark m-0" style="font-size: 1.8rem;">Today's Showroom Rates</h2>
+                        <p class="text-muted small m-0 mt-1">* Price updates dynamically based on live spot market rates</p>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="row g-3 text-center">
+                            <div class="col-md-4">
+                                <div class="bg-white p-3 shadow-sm border border-light">
+                                    <span class="text-muted text-uppercase small tracking-wider d-block mb-1" style="font-size: 0.75rem;">Gold (22K) <span class="text-secondary">per 10g</span></span>
+                                    <h4 id="tickerGold22" class="font-editorial text-dark m-0">₹--,---</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="bg-white p-3 shadow-sm border border-light">
+                                    <span class="text-muted text-uppercase small tracking-wider d-block mb-1" style="font-size: 0.75rem;">Gold (18K) <span class="text-secondary">per 10g</span></span>
+                                    <h4 id="tickerGold18" class="font-editorial text-dark m-0">₹--,---</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="bg-white p-3 shadow-sm border border-light">
+                                    <span class="text-muted text-uppercase small tracking-wider d-block mb-1" style="font-size: 0.75rem;">Silver (925) <span class="text-secondary">per 1kg</span></span>
+                                    <h4 id="tickerSilver" class="font-editorial text-dark m-0">₹--,---</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Showcase Section -->
+        <section class="section-padding container text-center" data-aos="fade-up">
+            <span class="section-subtitle">Exquisite Artistry</span>
+            <h2 class="section-title mb-4">Uncompromising Purity Standards</h2>
+            <p class="text-muted max-width-600 mx-auto" style="max-width: 650px;">
+                We specialize exclusively in authentic Hallmark Gold and Sterling Silver ornaments. Our legacy rejects imitation alternatives, ensuring every piece serves as a timeless family heirloom and a stable financial asset.
+            </p>
+            <div class="row mt-5 g-4 text-start">
+                <!-- Gold Collection Card with Online Curated Asset -->
+                <div class="col-md-6" onclick="window.location.href='collections.html'" style="cursor: pointer;">
+                    <div class="position-relative overflow-hidden p-5 d-flex align-items-end" style="height: 380px; background: linear-gradient(to top, rgba(17,17,17,0.95), transparent), url('https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=800&q=80') center/cover no-repeat;">
+                        <div>
+                            <h3 class="font-editorial text-white mb-2">The Gold Collection</h3>
+                            <p class="text-white-50 small m-0">Bridal Chokers, Kada, Mangalsutras, & Custom Necklaces →</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Silver Collection Card with Online Curated Asset -->
+                <div class="col-md-6" onclick="window.location.href='collections.html'" style="cursor: pointer;">
+                    <div class="position-relative overflow-hidden p-5 d-flex align-items-end" style="height: 380px; background: linear-gradient(to top, rgba(17,17,17,0.95), transparent), url('https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=80') center/cover no-repeat;">
+                        <div>
+                            <h3 class="font-editorial text-white mb-2">The Silver Collection</h3>
+                            <p class="text-white-50 small m-0">Premium Sterling Anklets, Idols, Diyas, & Traditional Gifts →</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Luxury Fine Footer System -->
+    <footer class="bg-black text-white pt-5 pb-4 border-top border-dark">
+        <div class="container text-center text-md-start">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="font-editorial text-warning mb-3">Unai Jewellers</h5>
+                    <p class="small text-white-50" style="line-height: 1.7;">From Daily Wear to Wedding Flair. Providing certified purity and trusted craftsmanship across generations.</p>
+                </div>
+                <div class="col-md-4 text-md-center">
+                    <h6 class="text-uppercase tracking-wider small mb-3 text-secondary">Quick Links</h6>
+                    <ul class="list-unstyled small d-inline-block text-start">
+                        <li class="mb-2"><a href="collections.html" class="text-white-50 hover-warning">Our Catalogue</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white-50 hover-warning">Our Story</a></li>
+                        <li class="mb-2"><a href="faq.html" class="text-white-50 hover-warning">Purity FAQ</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50 hover-warning">Contact Showroom</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="text-uppercase tracking-wider small mb-3 text-secondary">Showroom Location</h6>
+                    <p class="small text-white-50 mb-1">Shop No. 1, Main Bazar Road,</p>
+                    <p class="small text-white-50 mb-3">Unai, Gujarat, India</p>
+                    <p class="small text-warning"><i class="fa-solid fa-phone me-2"></i>+91 63516 34416</p>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="row align-items-center small text-white-50">
+                <div class="col-md-6 text-center text-md-start">
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+                    <span class="text-uppercase tracking-widest style-gold" style="font-size: 0.65rem; color: var(--color-gold);">100% BIS Government Hallmarked Certified Purity</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Global Appended Interface Components -->
+    <a href="https://wa.me/916351634416?text=Hello%20Unai%20Jewellers..." class="whatsapp-floating-trigger" target="_blank" aria-label="WhatsApp Inquiry"><i class="fa-brands fa-whatsapp"></i></a>
+    
+    <div id="cookiePrivacyBanner" class="cookie-consent-banner">
+        <h5 class="font-editorial text-warning mb-2">Elevating Your Experience</h5>
+        <p class="small text-white-50 mb-3">We utilize browser caching to safely run dynamic pricing calculators.</p>
+        <button id="acceptCookiesBtn" class="btn btn-sm btn-outline-light rounded-0 px-3">Acknowledge</button>
+    </div>
+
+    <!-- Core Pipeline Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/gold-rate.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 50 });
+    </script>
+</body>
+</html>

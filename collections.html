@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Our Collections | Unai Jewellers Showcase</title>
+        <meta name="description"
+            content="Explore our showroom catalog featuring hallmark gold chokers, kada, and sterling silver traditional gifts.">
+
+        <!-- Professional Web Asset CDNs -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Poppins:wght@300;400;500;600&display=swap"
+            rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <!-- Internal Stylesheet Layer Connections -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animations.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body class="bg-light">
+
+        <!-- Sticky Header Navbar Navigation -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-luxury fixed-top"
+                style="background: #111111;">
+                <div class="container">
+                    <a class="navbar-brand navbar-brand-editorial"
+                        href="index.html">Unai Jewellers</a>
+                    <button class="navbar-toggler border-0 text-white"
+                        type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarLuxuryMenu"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars-staggered fs-3"></i>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end"
+                        id="navbarLuxuryMenu">
+                        <ul class="navbar-nav align-items-center">
+                            <li class="nav-item"><a class="nav-link"
+                                    href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link active"
+                                    href="collections.html">Collections</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="about.html">Our Story</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="faq.html">FAQ</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main style="margin-top: 100px;">
+            <!-- Filter and Search Header -->
+            <section class="py-5 bg-white border-bottom">
+                <div class="container text-center">
+                    <span
+                        class="text-uppercase tracking-wider small text-warning fw-medium d-block mb-1"
+                        style="letter-spacing: 3px;">The Catalog</span>
+                    <h1 class="font-editorial text-dark mb-4"
+                        style="font-size: 2.5rem;">Our Showcase Ornaments</h1>
+
+                    <!-- Filter Controls Matrix -->
+                    <div
+                        class="row g-3 justify-content-center max-width-600 mx-auto"
+                        style="max-width: 700px;">
+                        <div class="col-md-6">
+                            <input
+                                type="text"
+                                id="catalogSearchInput"
+                                class="form-control rounded-0 border-secondary-subtle py-2 px-3"
+                                placeholder="Search Gold, Silver, Necklace, Kada...">
+                        </div>
+                        <div class="col-md-4">
+                            <select id="catalogCategoryFilter"
+                                class="form-select rounded-0 border-secondary-subtle py-2">
+                                <option value="ALL">All Jewellery</option>
+                                <option value="Gold">Gold</option>
+                                <option value="Silver">Silver</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dynamic Product Catalog Grid Showcase -->
+            <section class="section-padding container">
+                <div id="showroomGridContainer" class="row g-4">
+                    <!-- JavaScript automatically injects the live interactive item cards here -->
+                    <div class="col-12 text-center py-5">
+                        <div class="spinner-border text-warning" role="status">
+                            <span class="visually-hidden">Loading
+                                Ornaments...</span>
+                        </div>
+                        <p class="text-muted mt-2 small">Loading collection
+                            display...</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Luxury Fine Footer System -->
+        <footer class="bg-black text-white pt-5 pb-4 border-top border-dark">
+            <div class="container text-center text-md-start">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <h5 class="font-editorial text-warning mb-3">Unai
+                            Jewellers</h5>
+                        <p class="small text-white-50"
+                            style="line-height: 1.7;">From Daily Wear to Wedding
+                            Flair. Providing certified purity and trusted
+                            craftsmanship across generations.</p>
+                    </div>
+                    <div class="col-md-4 text-md-center">
+                        <h6
+                            class="text-uppercase tracking-wider small mb-3 text-secondary">Quick
+                            Links</h6>
+                        <ul
+                            class="list-unstyled small d-inline-block text-start">
+                            <li class="mb-2"><a href="collections.html"
+                                    class="text-white-50 hover-warning">Our
+                                    Catalogue</a></li>
+                            <li class="mb-2"><a href="about.html"
+                                    class="text-white-50 hover-warning">Our
+                                    Story</a></li>
+                            <li class="mb-2"><a href="faq.html"
+                                    class="text-white-50 hover-warning">Purity
+                                    FAQ</a></li>
+                            <li class="mb-2"><a href="contact.html"
+                                    class="text-white-50 hover-warning">Contact
+                                    Showroom</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h6
+                            class="text-uppercase tracking-wider small mb-3 text-secondary">Showroom
+                            Location</h6>
+                        <p class="small text-white-50 mb-1">Shop No. 1, Main
+                            Bazar Road,</p>
+                        <p class="small text-white-50 mb-3">Unai, Gujarat,
+                            India</p>
+                        <p class="small text-warning"><i
+                                class="fa-solid fa-phone me-2"></i>+91 99999
+                            99999</p>
+                    </div>
+                </div>
+                <hr class="border-secondary my-4">
+                <div class="row align-items-center small text-white-50">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="m-0">&copy; 2026 Unai Jewellers. All Rights
+                            Reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+                        <span class="text-uppercase tracking-widest style-gold"
+                            style="font-size: 0.65rem; color: var(--color-gold);">100%
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Global Component Append Systems (Quickview Modal & Concierge Triggers) -->
+        <a href="https://wa.me/919999999999?text=Hello%20Unai%20Jewellers..."
+            class="whatsapp-floating-trigger" target="_blank"
+            aria-label="WhatsApp Inquiry"><i
+                class="fa-brands fa-whatsapp"></i></a>
+
+        <!-- Image Preview Modal -->
+        <div class="modal fade" id="imageModal" tabindex="-1"
+            aria-hidden="true">
+
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+
+                <div class="modal-content border-0 rounded-0">
+
+                    <button
+                        type="button"
+                        class="btn-close position-absolute top-0 end-0 m-3 bg-white rounded-circle p-2"
+                        data-bs-dismiss="modal"
+                        aria-label="Close">
+                    </button>
+
+                    <img
+                        id="modalImage"
+                        src
+                        alt="Jewellery Image"
+                        class="img-fluid"
+                        style="width:100%;height:600px;object-fit:cover;">
+
+                    <div class="p-4 text-center">
+
+                        <h3 id="modalTitle" class="font-editorial mb-3"></h3>
+
+                        <span
+                            id="modalCategory"
+                            class="badge bg-warning text-dark px-4 py-2">
+                        </span>
+
+                        <div class="mt-4">
+
+                            <a
+                                id="modalWhatsapp"
+                                href="#"
+                                target="_blank"
+                                class="btn btn-success px-5 py-2">
+
+                                <i class="fa-brands fa-whatsapp me-2"></i>
+                                Enquire on WhatsApp
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Core Pipeline Scripts Layer Mapping -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- Data Repositories & Execution Pipelines -->
+        <script src="js/gold-rate.js"></script>
+        <script src="js/jewellery.js"></script>
+        <script src="js/search.js"></script>
+        <script src="js/animations.js"></script>
+        <script>
+        AOS.init({ once: true, offset: 50 });
+    </script>
+    </body>
+</html>

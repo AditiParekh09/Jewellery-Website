@@ -1,0 +1,303 @@
+/* ==========================================================================
+   UNAI JEWELLERS - CORE DESIGN SYSTEM (LUXURY BRANDING)
+   ========================================================================== */
+
+:root {
+    /* Color Tokens */
+    --color-gold: #D4AF37;
+    --color-gold-hover: #AA841A;
+    --color-black: #111111;
+    --color-white: #FFFFFF;
+    --color-cream: #F8F5F2;
+    --color-dark-gray: #444444;
+    --color-light-gray: #EAEAEA;
+    
+    /* Typography Tokens */
+    --font-primary: 'Playfair Display', serif;
+    --font-secondary: 'Poppins', sans-serif;
+    
+    /* Layout Tokens */
+    --transition-smooth: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    --glass-bg: rgba(255, 255, 255, 0.08);
+    --glass-border: rgba(255, 255, 255, 0.15);
+    --glass-blur: blur(15px);
+}
+
+/* Reset & Base Rules */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-secondary);
+    background-color: var(--color-white);
+    color: var(--color-black);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .font-editorial {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+p {
+    color: var(--color-dark-gray);
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-smooth);
+}
+
+/* Global Luxury Layout Components */
+.section-padding {
+    padding: 120px 0;
+}
+
+.section-title-wrapper {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.section-subtitle {
+    font-family: var(--font-secondary);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--color-gold);
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.section-title {
+    font-size: 2.8rem;
+    color: var(--color-black);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 1px;
+    background-color: var(--color-gold);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: var(--color-white);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-black);
+}
+
+/* Luxury Button System */
+.btn-luxury {
+    font-family: var(--font-secondary);
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 14px 36px;
+    border: 1px solid var(--color-black);
+    background: transparent;
+    color: var(--color-black);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: var(--transition-smooth);
+    border-radius: 0;
+}
+
+.btn-luxury::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-black);
+    transition: var(--transition-smooth);
+    z-index: -1;
+}
+
+.btn-luxury:hover {
+    color: var(--color-white) !important;
+}
+
+.btn-luxury:hover::before {
+    left: 0;
+}
+
+.btn-luxury-gold {
+    border-color: var(--color-gold);
+    color: var(--color-white);
+    background: transparent;
+}
+
+.btn-luxury-gold::before {
+    background-color: var(--color-gold);
+}
+
+.btn-luxury-gold:hover {
+    border-color: var(--color-gold);
+}
+
+/* Sticky Luxury Navbar Styling */
+.navbar-luxury {
+    padding: 25px 0;
+    transition: var(--transition-smooth);
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-luxury.scrolled {
+    background: rgba(17, 17, 17, 0.95);
+    backdrop-filter: var(--glass-blur);
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.navbar-brand-editorial {
+    font-family: var(--font-primary);
+    font-size: 1.8rem;
+    color: var(--color-white) !important;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.navbar-luxury.scrolled .navbar-brand-editorial {
+    color: var(--color-white) !important;
+}
+
+.navbar-luxury .nav-link {
+    font-family: var(--font-secondary);
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.8) !important;
+    margin: 0 15px;
+    position: relative;
+    transition: var(--transition-smooth);
+}
+
+.navbar-luxury .nav-link:hover,
+.navbar-luxury .nav-link.active {
+    color: var(--color-gold) !important;
+}
+
+/* Hero Section Base */
+.hero-luxury {
+    height: 100vh;
+    min-height: 700px;
+    position: relative;
+    background-color: var(--color-black);
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(17,17,17,0.6) 0%, rgba(17,17,17,0.85) 100%);
+    z-index: 1;
+}
+
+.hero-video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    opacity: 0.4;
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.hero-title {
+    font-size: 4.2rem;
+    line-height: 1.15;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.hero-subtitle {
+    font-family: var(--font-secondary);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: var(--color-gold);
+    margin-bottom: 20px;
+    display: block;
+    font-weight: 500;
+}
+/* ==========================================================================
+   COLLECTIONS PAGE - CARD HOVER EFFECTS
+   ========================================================================== */
+
+.collection-card{
+    cursor: pointer;
+    overflow: hidden;
+    border: none;
+    transition: all .35s ease;
+    background: var(--color-white);
+}
+
+.collection-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 18px 40px rgba(0,0,0,.18) !important;
+}
+
+.collection-card img{
+    transition: transform .4s ease;
+}
+
+.collection-card:hover img{
+    transform: scale(1.06);
+}
+
+.collection-card .card-body{
+    transition: all .35s ease;
+}
+
+.collection-card:hover .card-body{
+    background: #fcfcfc;
+}
+
+.badge{
+    border-radius: 30px;
+    font-weight: 500;
+    padding: .45rem .9rem;
+    letter-spacing: .5px;
+}
